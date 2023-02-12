@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Karla', sans-serif;
+}
+
+.container{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	background-color: hsl(204, 43%, 93%);
+
+}
+.card{
+	width: 650px;
+	margin: auto;
+	min-height: 400px;
+	background-color: #fff;
+	border-radius: 20px;
+}
+.first{
+	width: 100%;
+	height: 230px;
+	border-radius: 20px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	background-color: hsl(0, 0%, 100%);
+	padding: 50px 40px 5px 40px;
+}
+
+
+
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.row .col-1{
+	width: 50%;
+	height: 250px;
+	border-radius: 20px;
+	padding-left: 40px;
+	padding-top: 50px;
+	background-color: hsl(179, 62%, 43%);
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.row .col-2{
+	width: 50%;
+	height: 250px;
+	border-radius: 20px;
+	padding-left: 40px;
+	padding-top: 50px;
+	background-color: hsl(179, 62%, 43%);
+	opacity: 0.8;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.first h1{
+	color: hsl(179, 62%, 43%);
+	padding-bottom: 20px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	font-size: 25px;
+}
+
+.first h3{
+	color: hsl(71, 73%, 54%);
+	padding-bottom: 15px;
+}
+
+.first p{
+	color: hsl(218, 22%, 67%);
+}
+
+.col-1, .col-2{
+	color: hsl(0, 0%, 100%);
+}
+
+
+.col-1 h3{
+	padding-bottom: 15px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+span{
+	font-size: 17px;
+	opacity: 0.5;
+}
+.col-1 h1{
+	padding-bottom: 7px;
+}
+
+.col-1 p{
+	padding-bottom: 25px;
+	opacity: 0.9;
+}
+
+button{
+	padding: 15px 50px;
+	width: 250px;
+	border: none;
+	border-radius: 5px;
+	background-color: hsl(71, 73%, 54%);
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+button:hover{
+	background-color: hsl(71, 100%, 40%);
+	
+}
+
+.col-2 h3{
+	padding-bottom: 15px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+@media screen and (max-width:750px) {
+	.card{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.first{
+		margin-bottom: 20px;
+	}
+	.row{
+		width: 100%;
+		flex-direction: column-reverse;
+	}
+	.row .col-1{
+		width: 100%;
+		border-radius: 0;
+	}
+	.row .col-2{
+		width: 100%;
+		border-radius: 0;
+	}
+}
